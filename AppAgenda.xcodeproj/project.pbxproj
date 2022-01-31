@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7010B1E827A7351400CB055E /* CategoriaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B1E727A7351400CB055E /* CategoriaTableViewController.swift */; };
+		7010B1EE27A736FC00CB055E /* RepositorioCategoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B1ED27A736FC00CB055E /* RepositorioCategoria.swift */; };
+		7010B1F327A7408600CB055E /* RepositorioTarefa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B1F227A7408600CB055E /* RepositorioTarefa.swift */; };
+		7027A1EB27A440A5009CC49B /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7027A1EA27A440A5009CC49B /* TaskTableViewCell.swift */; };
+		7027A20427A483D9009CC49B /* TarefaDescricaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7027A20327A483D9009CC49B /* TarefaDescricaoTableViewCell.swift */; };
+		7027A20927A48410009CC49B /* DataHoraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7027A20827A48410009CC49B /* DataHoraTableViewCell.swift */; };
+		7027A22E27A4A36D009CC49B /* NovaTarefaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7027A22D27A4A36D009CC49B /* NovaTarefaViewController.swift */; };
 		70A4F43227A2F5AA0057C177 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A4F43127A2F5AA0057C177 /* AppDelegate.swift */; };
 		70A4F43427A2F5AA0057C177 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A4F43327A2F5AA0057C177 /* SceneDelegate.swift */; };
-		70A4F43627A2F5AA0057C177 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A4F43527A2F5AA0057C177 /* ViewController.swift */; };
 		70A4F43927A2F5AA0057C177 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A4F43727A2F5AA0057C177 /* Main.storyboard */; };
 		70A4F43C27A2F5AA0057C177 /* AppAgenda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70A4F43A27A2F5AA0057C177 /* AppAgenda.xcdatamodeld */; };
 		70A4F43E27A2F5AD0057C177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70A4F43D27A2F5AD0057C177 /* Assets.xcassets */; };
 		70A4F44127A2F5AD0057C177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A4F43F27A2F5AD0057C177 /* LaunchScreen.storyboard */; };
 		70A4F44C27A2F5AD0057C177 /* AppAgendaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A4F44B27A2F5AD0057C177 /* AppAgendaTests.swift */; };
 		70A4F45727A2F5AD0057C177 /* AppAgendaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A4F45627A2F5AD0057C177 /* AppAgendaUITests.swift */; };
+		70A4F47427A3001C0057C177 /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A4F47327A3001C0057C177 /* TasksTableViewController.swift */; };
+		70A4F47A27A313C70057C177 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A4F47927A313C70057C177 /* Task.swift */; };
+		70A4F47F27A314AE0057C177 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A4F47E27A314AE0057C177 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7010B1E727A7351400CB055E /* CategoriaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaTableViewController.swift; sourceTree = "<group>"; };
+		7010B1ED27A736FC00CB055E /* RepositorioCategoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorioCategoria.swift; sourceTree = "<group>"; };
+		7010B1F227A7408600CB055E /* RepositorioTarefa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorioTarefa.swift; sourceTree = "<group>"; };
+		7027A1EA27A440A5009CC49B /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		7027A20327A483D9009CC49B /* TarefaDescricaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarefaDescricaoTableViewCell.swift; sourceTree = "<group>"; };
+		7027A20827A48410009CC49B /* DataHoraTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHoraTableViewCell.swift; sourceTree = "<group>"; };
+		7027A22D27A4A36D009CC49B /* NovaTarefaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaTarefaViewController.swift; sourceTree = "<group>"; };
 		70A4F42E27A2F5AA0057C177 /* AppAgenda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppAgenda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A4F43127A2F5AA0057C177 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70A4F43327A2F5AA0057C177 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		70A4F43527A2F5AA0057C177 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		70A4F43827A2F5AA0057C177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70A4F43B27A2F5AA0057C177 /* AppAgenda.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppAgenda.xcdatamodel; sourceTree = "<group>"; };
 		70A4F43D27A2F5AD0057C177 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +66,9 @@
 		70A4F45227A2F5AD0057C177 /* AppAgendaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppAgendaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70A4F45627A2F5AD0057C177 /* AppAgendaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAgendaUITests.swift; sourceTree = "<group>"; };
 		70A4F45827A2F5AD0057C177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70A4F47327A3001C0057C177 /* TasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
+		70A4F47927A313C70057C177 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		70A4F47E27A314AE0057C177 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +96,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7010B1EC27A736C400CB055E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				7010B1ED27A736FC00CB055E /* RepositorioCategoria.swift */,
+				7010B1F227A7408600CB055E /* RepositorioTarefa.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		7027A1E927A44078009CC49B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7027A1EA27A440A5009CC49B /* TaskTableViewCell.swift */,
+				7027A20327A483D9009CC49B /* TarefaDescricaoTableViewCell.swift */,
+				7027A20827A48410009CC49B /* DataHoraTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		70A4F42527A2F5AA0057C177 = {
 			isa = PBXGroup;
 			children = (
@@ -101,9 +138,11 @@
 		70A4F43027A2F5AA0057C177 /* AppAgenda */ = {
 			isa = PBXGroup;
 			children = (
+				7010B1EC27A736C400CB055E /* Repository */,
+				70A4F47827A3134C0057C177 /* Models */,
+				70A4F46A27A2FDE60057C177 /* Controllers */,
 				70A4F43127A2F5AA0057C177 /* AppDelegate.swift */,
 				70A4F43327A2F5AA0057C177 /* SceneDelegate.swift */,
-				70A4F43527A2F5AA0057C177 /* ViewController.swift */,
 				70A4F43727A2F5AA0057C177 /* Main.storyboard */,
 				70A4F43D27A2F5AD0057C177 /* Assets.xcassets */,
 				70A4F43F27A2F5AD0057C177 /* LaunchScreen.storyboard */,
@@ -129,6 +168,26 @@
 				70A4F45827A2F5AD0057C177 /* Info.plist */,
 			);
 			path = AppAgendaUITests;
+			sourceTree = "<group>";
+		};
+		70A4F46A27A2FDE60057C177 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7027A1E927A44078009CC49B /* Cells */,
+				70A4F47327A3001C0057C177 /* TasksTableViewController.swift */,
+				7027A22D27A4A36D009CC49B /* NovaTarefaViewController.swift */,
+				7010B1E727A7351400CB055E /* CategoriaTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		70A4F47827A3134C0057C177 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70A4F47927A313C70057C177 /* Task.swift */,
+				70A4F47E27A314AE0057C177 /* Category.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +320,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70A4F43627A2F5AA0057C177 /* ViewController.swift in Sources */,
+				7027A20427A483D9009CC49B /* TarefaDescricaoTableViewCell.swift in Sources */,
+				7027A1EB27A440A5009CC49B /* TaskTableViewCell.swift in Sources */,
 				70A4F43227A2F5AA0057C177 /* AppDelegate.swift in Sources */,
+				7010B1EE27A736FC00CB055E /* RepositorioCategoria.swift in Sources */,
 				70A4F43427A2F5AA0057C177 /* SceneDelegate.swift in Sources */,
+				70A4F47A27A313C70057C177 /* Task.swift in Sources */,
+				70A4F47427A3001C0057C177 /* TasksTableViewController.swift in Sources */,
 				70A4F43C27A2F5AA0057C177 /* AppAgenda.xcdatamodeld in Sources */,
+				7010B1F327A7408600CB055E /* RepositorioTarefa.swift in Sources */,
+				70A4F47F27A314AE0057C177 /* Category.swift in Sources */,
+				7027A20927A48410009CC49B /* DataHoraTableViewCell.swift in Sources */,
+				7010B1E827A7351400CB055E /* CategoriaTableViewController.swift in Sources */,
+				7027A22E27A4A36D009CC49B /* NovaTarefaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +511,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6L5WUV887K;
 				INFOPLIST_FILE = AppAgenda/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +531,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6L5WUV887K;
 				INFOPLIST_FILE = AppAgenda/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
