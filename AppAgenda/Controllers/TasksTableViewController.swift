@@ -13,6 +13,7 @@ class TasksTableViewController: UITableViewController {
     private var dateFormatter: DateFormatter = DateFormatter()
     
     private var tarefas: [Task] = []
+    private var tarefaRepositorio = RepositorioTarefa.instance
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,5 +46,16 @@ class TasksTableViewController: UITableViewController {
         return cell
     }
     
-
+    @IBAction func onBtnRemover(_ sender: UIButton) {
+        let point = sender.convert(CGPoint.zero, to: tableView)
+        guard let indexPath = tableView.indexPathForRow(at: point)
+        else {return}
+        tarefas.remove(at: indexPath.row)
+        tableView.beginUpdates()
+        tableView.deleteRows(at: [IndexPath(row: indexPath.row, section: 0)], with: .left)
+        tableView.endUpdates()
+    }
+    
+    
+    
 }

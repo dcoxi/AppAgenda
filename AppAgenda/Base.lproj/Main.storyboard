@@ -42,8 +42,8 @@
                                                 <constraint firstAttribute="width" constant="2" id="e6R-uA-her"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primeiro programa de agenda com o o swift usando o Xcode" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CY7-UX-IWN">
-                                            <rect key="frame" x="97" y="29" width="299" height="35"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Primeiro programa de agenda com o o swift usando o Xcode" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CY7-UX-IWN">
+                                            <rect key="frame" x="97" y="29" width="278" height="35"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -54,6 +54,14 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRe-Hl-5ix">
+                                            <rect key="frame" x="383" y="21" width="20" height="22"/>
+                                            <color key="tintColor" systemColor="systemPinkColor"/>
+                                            <state key="normal" image="trash" catalog="system"/>
+                                            <connections>
+                                                <action selector="onBtnRemover:" destination="dqe-wc-I6Y" eventType="touchUpInside" id="b2C-8H-5SR"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="v9b-0b-jFq" firstAttribute="centerX" secondItem="HLd-cX-CMz" secondAttribute="centerX" id="2uv-JE-Foz"/>
@@ -61,10 +69,10 @@
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jsM-NZ-Nl2" secondAttribute="trailing" constant="20" symbolic="YES" id="Cym-1m-83K"/>
                                         <constraint firstItem="tKe-I3-02F" firstAttribute="top" secondItem="8gz-9u-b1m" secondAttribute="topMargin" constant="7" id="FZ1-xX-8Ya"/>
                                         <constraint firstItem="HLd-cX-CMz" firstAttribute="centerY" secondItem="8gz-9u-b1m" secondAttribute="centerY" constant="-8" id="Jsv-he-pCb"/>
+                                        <constraint firstItem="dRe-Hl-5ix" firstAttribute="top" secondItem="8gz-9u-b1m" secondAttribute="top" constant="21" id="LaG-zi-9gy"/>
                                         <constraint firstItem="tKe-I3-02F" firstAttribute="leading" secondItem="8gz-9u-b1m" secondAttribute="leading" constant="88" id="Qhk-lm-gFN"/>
                                         <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="CY7-UX-IWN" secondAttribute="bottom" constant="10" id="Roe-34-ECL"/>
                                         <constraint firstItem="jsM-NZ-Nl2" firstAttribute="leading" secondItem="tKe-I3-02F" secondAttribute="trailing" constant="8" symbolic="YES" id="UAZ-Cg-O3f"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CY7-UX-IWN" secondAttribute="trailing" constant="10" id="UuG-hK-R8f"/>
                                         <constraint firstItem="HLd-cX-CMz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8gz-9u-b1m" secondAttribute="leading" id="W4k-LG-gXR"/>
                                         <constraint firstItem="tKe-I3-02F" firstAttribute="top" secondItem="jsM-NZ-Nl2" secondAttribute="bottom" constant="-11" id="d5L-WZ-4Rj"/>
                                         <constraint firstItem="tKe-I3-02F" firstAttribute="leading" secondItem="HLd-cX-CMz" secondAttribute="trailing" constant="7" id="fYB-9A-aal"/>
@@ -74,8 +82,10 @@
                                         <constraint firstItem="jsM-NZ-Nl2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HLd-cX-CMz" secondAttribute="trailing" id="pOC-ec-HV2"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="tKe-I3-02F" secondAttribute="bottom" constant="6" id="qKk-Q7-Ulp"/>
                                         <constraint firstItem="tKe-I3-02F" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HLd-cX-CMz" secondAttribute="trailing" id="rMG-Qj-Nqc"/>
+                                        <constraint firstItem="dRe-Hl-5ix" firstAttribute="leading" secondItem="8gz-9u-b1m" secondAttribute="leading" constant="383" id="tcA-do-0ZG"/>
                                         <constraint firstItem="v9b-0b-jFq" firstAttribute="top" secondItem="HLd-cX-CMz" secondAttribute="bottom" constant="-2.5" id="tcq-kr-o2v"/>
                                         <constraint firstItem="CY7-UX-IWN" firstAttribute="leading" secondItem="tKe-I3-02F" secondAttribute="trailing" constant="7" id="wsm-tM-390"/>
+                                        <constraint firstAttribute="trailing" secondItem="dRe-Hl-5ix" secondAttribute="trailing" constant="11" id="xdw-vH-34z"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -92,6 +102,9 @@
                             <outlet property="delegate" destination="dqe-wc-I6Y" id="RxI-P2-O6D"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="cyk-a7-uED"/>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" title="Minhas Tarefas" id="PEw-5R-dJr">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="iO4-9c-WSn">
                             <connections>
@@ -99,6 +112,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jXD-LR-7sz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -262,11 +276,15 @@
     </scenes>
     <resources>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

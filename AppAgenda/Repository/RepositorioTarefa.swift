@@ -33,4 +33,8 @@ class RepositorioTarefa {
         self.tarefas
     }
     
+    func removerTarefa(index: Int){
+        tarefas.remove(at: index)
+    }
+    
 }
