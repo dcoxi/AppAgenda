@@ -86,8 +86,10 @@ class NovaTarefaViewController: UITableViewController, UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
-        let celula = textField.superview?.superview as? TarefaDescricaoTableViewCell
-        self.tarefa.nome = textField.text!
+        
+        let index = IndexPath(row: 0, section: 0)
+        let cell = self.tableView.cellForRow(at: index) as! TarefaDescricaoTableViewCell
+        self.tarefa.nome = cell.txtDescricaoTarefa.text!
     }
     
     //Mark - UIView Functions
